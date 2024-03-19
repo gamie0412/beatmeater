@@ -28,13 +28,14 @@ body {
 }
 
 #meme1 {
-    top: 10%;
-    left: 10%;
+    top: 15%;
+    left: 40%;
+    width: 400px;
 }
 
 #meme2 {
-    top: 15%;
-    left: 40%;
+    top: 10%;
+    left: 10%;
 }
 
 #meme3 {
