@@ -11,8 +11,17 @@ body {
 }
 
 h1 {
-    margin: 30px;
     animation: changeColor 5s infinite alternate; /* Change color every 5 seconds */
+    font-size: 72px; /* Adjust font size as needed */
+    text-align: center; /* Center-align text */
+    position: absolute; /* Position the element absolutely */
+    top: 50%; /* Place it at 50% from the top */
+    left: 50%; /* Place it at 50% from the left */
+    transform: translate(-50%, -50%); /* Translate it back by half its size */
+}
+
+.spin-left {
+    animation: spinToLeft 5s linear infinite; /* Spin to the left side every 5 seconds */;
 }
 
 .meme {
@@ -40,6 +49,15 @@ h1 {
     60% { color: green; }
     80% { color: blue; }
     100% { color: purple; } /* Final color */
+}
+
+@keyframes spinToLeft {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg); /* Start rotation angle */
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(-360deg); /* End rotation angle (360 degrees) */
+    }
 }
 
 #meme1 {
