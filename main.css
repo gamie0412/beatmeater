@@ -10,6 +10,11 @@ body {
     cursor: url('assets/cursor.png'), auto;
 }
 
+h1 {
+    margin: 30px;
+    animation: changeColor 5s infinite alternate; /* Change color every 5 seconds */
+}
+
 .meme {
   animation: rotation 8s infinite linear;
   position: absolute;
@@ -26,6 +31,15 @@ body {
   to {
     transform: rotate(359deg);
   }
+}
+
+@keyframes changeColor {
+    0% { color: red; } /* Initial color */
+    20% { color: orange; }
+    40% { color: yellow; }
+    60% { color: green; }
+    80% { color: blue; }
+    100% { color: purple; } /* Final color */
 }
 
 #meme1 {
