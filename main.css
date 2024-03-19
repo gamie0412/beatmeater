@@ -11,17 +11,14 @@ body {
 }
 
 h1 {
-    animation: changeColor 5s infinite alternate; /* Change color every 5 seconds */
-    font-size: 72px; /* Adjust font size as needed */
+    animation: combinedAnimation 5s linear infinite;
+    font-size: 200px; /* Adjust font size as needed */
     text-align: center; /* Center-align text */
     position: absolute; /* Position the element absolutely */
     top: 50%; /* Place it at 50% from the top */
     left: 50%; /* Place it at 50% from the left */
     transform: translate(-50%, -50%); /* Translate it back by half its size */
-}
-
-.spin-left {
-    animation: spinToLeft 5s linear infinite; /* Spin to the left side every 5 seconds */;
+    z-index: 2;
 }
 
 .meme {
@@ -42,20 +39,29 @@ h1 {
   }
 }
 
-@keyframes changeColor {
-    0% { color: red; } /* Initial color */
-    20% { color: orange; }
-    40% { color: yellow; }
-    60% { color: green; }
-    80% { color: blue; }
-    100% { color: purple; } /* Final color */
-}
-
-@keyframes spinToLeft {
-    from {
+@keyframes combinedAnimation {
+    0% {
+        color: red; /* Initial color */
         transform: translate(-50%, -50%) rotate(0deg); /* Start rotation angle */
     }
-    to {
+    20% {
+        color: orange;
+        transform: translate(-50%, -50%) rotate(-72deg); /* Adjust rotation angle */
+    }
+    40% {
+        color: yellow;
+        transform: translate(-50%, -50%) rotate(-144deg); /* Adjust rotation angle */
+    }
+    60% {
+        color: green;
+        transform: translate(-50%, -50%) rotate(-216deg); /* Adjust rotation angle */
+    }
+    80% {
+        color: blue;
+        transform: translate(-50%, -50%) rotate(-288deg); /* Adjust rotation angle */
+    }
+    100% {
+        color: purple; /* Final color */
         transform: translate(-50%, -50%) rotate(-360deg); /* End rotation angle (360 degrees) */
     }
 }
