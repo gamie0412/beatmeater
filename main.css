@@ -11,8 +11,8 @@ body {
 }
 
 h1 {
-    animation: combinedAnimation 5s linear infinite;
-    font-size: 200px; /* Adjust font size as needed */
+    animation: combinedAnimation 3s linear infinite;
+    font-size: 288px; /* Adjust font size as needed */
     text-align: center; /* Center-align text */
     position: absolute; /* Position the element absolutely */
     top: 50%; /* Place it at 50% from the top */
