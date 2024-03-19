@@ -3,6 +3,10 @@ body {
     background-size: cover; /* Cover the entire background */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100vh; /* Set height to 100% of viewport height */
+    overflow: hidden; /* Hide overflow to prevent scrolling */
 }
 
 .meme {
