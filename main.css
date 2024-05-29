@@ -47,7 +47,7 @@ body {
 h1 {
     animation: combinedAnimation 3s linear infinite;
     line-height: 1;
-    font-size: 288px; /* Adjust font size as needed */
+    font-size: 144px; /* Adjust font size as needed */
     text-align: center; /* Center-align text */
     position: absolute; /* Position the element absolutely */
     top: 5%; /* Place it at 50% from the top */
