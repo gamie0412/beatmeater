@@ -50,7 +50,7 @@ h1 {
     font-size: 288px; /* Adjust font size as needed */
     text-align: center; /* Center-align text */
     position: absolute; /* Position the element absolutely */
-    top: 10%; /* Place it at 50% from the top */
+    top: 5%; /* Place it at 50% from the top */
     left: 50%; /* Place it at 50% from the left */
     transform: translate(-50%, -50%); /* Translate it back by half its size */
     z-index: 2;
