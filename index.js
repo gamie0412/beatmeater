@@ -38,6 +38,9 @@ var isNotClicked=true;
     }
     else {
       document.getElementById("lovefinal").innerHTML = "Love Score: " + loveFinal + "%";
+      if (LoveFinal === 69) {
+        document.getElementById("lovefinal").innerHTML = "Love Score: " + loveFinal + "% heh funny number";
+      }
     }
   }
 };
